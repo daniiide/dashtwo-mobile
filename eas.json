@@ -1,0 +1,34 @@
+{
+  "cli": {
+    "version": ">= 5.0.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "resourceClass": "default"
+      }
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk",
+        "resourceClass": "default"
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "apk",
+        "resourceClass": "default"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccount": "~/.android/google-play-api.json",
+        "track": "internal"
+      }
+    }
+  }
+}
